@@ -24,7 +24,7 @@ switch ($action) {
         $bio = $_POST['bio'];
 
         addContact($name, $phone, $email, $bio);
-        echo json_encode(addContact($name, $phone, $email, $bio));
+        //echo json_encode(addContact($name, $phone, $email, $bio));
         savePhonebook();
     }
         break;
