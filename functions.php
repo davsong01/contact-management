@@ -1,10 +1,10 @@
 <?php
 $phoneBook = json_decode(file_get_contents('phonebook.json'));
 
-Function addContact($a, $b, $mail, $bio){
+Function addContact($a, $b, $mail, $bio, $gender){
 	global $phoneBook; 
 	$success = true;
-	$contact = [$a, $b, $mail, $bio];
+	$contact = [$a, $b, $mail, $bio, $gender];
 	array_push($phoneBook, $contact);
 	$response = [
 		"success"=>$success,
