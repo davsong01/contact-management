@@ -22,8 +22,9 @@ switch ($action) {
         $name = ucfirst($_POST['name']);
         $email = $_POST['email'];
         $bio = $_POST['bio'];
+        $gender = $_POST['gender'];
 
-        addContact($name, $phone, $email, $bio);
+        addContact($name, $phone, $email, $bio, $gender);
         //echo json_encode(addContact($name, $phone, $email, $bio));
         savePhonebook();
     }
