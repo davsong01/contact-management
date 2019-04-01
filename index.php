@@ -34,7 +34,7 @@ switch ($action) {
     case 'delete':
     if(empty($_POST['id'])){
         $message[] = 'SUCESS: False';
-        $message[]= 'Contact ID is invalid';
+        $message[]= 'Contact Identification is invalid';
         echo json_encode($message); 
     }
 
