@@ -8,7 +8,7 @@ Function addContact($a, $b, $mail, $bio, $gender){
 	array_push($phoneBook, $contact);
 	$response = [
 		"success"=>$success,
-		"message" => ["Contact succesfully added"],
+		"message" => ["Operation Successful, Contact added"],
 		"results"=>[],
 	];
 	return $response;
